@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignComm</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="icon" type="images/x-icon" href="./icons/Logo.png" />
+</head>
+
+<body>
+    <header>
+        <div class="logo"><a href="./index.html">Sign<span>Comm</span></a></div>
+        <div class="navbar">
+            <ul class="links">
+                <li><a href="hero" class="nav-btn">Home</a></li>
+                <li><a href="about" class="nav-btn">About</a></li>
+                <li><a href="services" class="nav-btn">Services</a></li>
+                <li><a href="contact" class="nav-btn">Contact</a></li>
+                <li><a href="./components/contribute.html" class="nav-btn">Contribution</a></li>
+            </ul>
+            <div id="profile">
+                <img src="https://srcwap.com/wp-content/uploads/2022/08/abstract-user-flat-4.png" width="50" height="50">
+            </div>
+        </div>
+        <div class="toggle_btn">
+            <i id="barIcon" class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+    <profile id="profileContainer">
+        <a href="./components/Login.html"><i class="fa-solid fa-user"></i><p>Login</p></a> 
+        <a href="./components/Register.html"><i class="fa-solid fa-user-plus"></i><p>Register</p></a> 
+    </profile>
+    <hero class="hero-section" id="heroid">
+        <div class="hero-one">
+            <div class="hero-left">
+                <div class="hero-details">
+                    <h1 data-aos="fade-up" data-aos-duration="3000"><span>W</span>elcome to Sign<span>Comm</span></h1>
+                    <!-- <p>Together, let's break barriers, ignite change, and create a future where communication knows no boundaries.</p> -->
+                    <p class="heroPara" data-aos="fade-up" data-aos-duration="3000">Enter a realm where sign language
+                        bridges gaps, fostering understanding, and
+                        empowering individuals with hearing impairments to express themselves freely.</p>
+                    <div class="hero-btn">
+                        <a class="try-btn" href="https://tinyurl.com/SignCommunication" target="_blank"><button class="btn">Try the app</button></a>
+                        <button class="btn" id="LearnMoreBtn">Learn More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-right">
+                <swiper-container class="mySwiper-one" effect="cards" grab-cursor="true" loop="true">
+                    <swiper-slide><img src="./images/Mobile-image.png" class="mySwiperImg" alt=""></swiper-slide>
+                    <swiper-slide><img src="./images/Hero-image-2.png" class="mySwiperImg" alt=""></swiper-slide>
+                </swiper-container>
+            </div>
+        </div>
+        <div class="hero-two">
+            <a href="#doid" class="downBtn"><button class="down-arrow"><img src="./icons/icons8-double-down-50.png"
+                        alt="Down-arrow"></button></a>
+        </div>
+    </hero>
+    <do class="do-section" id="doid">
+        <div class="do-one">
+            <div class="do-top">
+                <h1 data-aos="fade-up" data-aos-duration="3000"><span>W</span>hat you will get</h1>
+                <p data-aos="fade-up" data-aos-duration="3000">We provide a communication bridge between the deaf and
+                    hearing community, fostering understanding and inclusivity.</p>
+            </div>
+            <div class="do-bottom">
+                <div class="do-details" data-aos="fade-up" data-aos-duration="3000">
+                    <img src="./images/SignLanguage Translation.png" alt="">
+                    <h3>Sign Language Translation</h3>
+                    <p>Seamless communication between sign language and spoken language users.</p>
+                </div>
+                <div class="do-details" id="do-details-two" data-aos="fade-up" data-aos-duration="3000">
+                    <img src="./images/Enpower Connections.jpg" alt="">
+                    <h3>Empowering Connections</h3>
+                    <p>Facilitating connections and fostering understanding between individuals with different
+                        communication needs.</p>
+                </div>
+                <div class="do-details" data-aos="fade-up" data-aos-duration="3000">
+                    <img src="./images/Inspiring Connection.jpg" alt="">
+                    <h3>Inspiring Connection</h3>
+                    <p> Inspiring connections and meaningful interactions through accessible communication solutions.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="do-two">
+            <a href="#cardid" class="downBtn"><button class="down-arrow"><img src="./icons/icons8-double-down-50.png"
+                        alt="Down-arrow"></button></a>
+        </div>
+    </do>
+    <card class="card-section" id="cardid">
+        <div class="card-one">
+            <div class="card-left">
+                <div class="card-details">
+                    <h1 data-aos="fade-up" data-aos-duration="1000"><span>E</span>xperience Versatile Features</h1>
+                    <p class="cardPara" data-aos="fade-up" data-aos-duration="1000">Discover the full potential of
+                        SignComm's cutting-edge capabilities, take your
+                        communication to new levels of effectiveness and ease, give yourself the freedom to express
+                        yourself
+                        naturally, and promote deeper connections and understanding.</p>
+                </div>
+            </div>
+            <div class="card-right">
+                <div class="card" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                    <div class="face front">
+                        <img src="./images/Enhance communication.jpg" alt="feature1">
+                        <h3>Enhanced Communication</h3>
+                    </div>
+                    <div class="face back">
+                        <h3>Seamless Communication</h3>
+                        <p>Our project enables effective communication between deaf individuals and the hearing
+                            community,
+                            bridging the communication gap and fostering inclusivity.</p>
+                    </div>
+                </div>
+                <div class="card" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                    <div class="face front">
+                        <img src="./images/Enpowerment.jpg" alt="feature1">
+                        <h3>Empowerment and Accessibility</h3>
+                    </div>
+                    <div class="face back">
+                        <h3>Breaking Barriers, Empowering Lives</h3>
+                        <p>Our project aims to enhance accessibility and provide equal opportunities for individuals
+                            with
+                            hearing impairments, enabling them to participate fully in education, work, and social
+                            interactions.
+                        </p>
+                    </div>
+                </div>
+                <div class="card" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                    <div class="face front">
+                        <img src="./images/User-Friendly Interface.jpg" alt="feature1">
+                        <h3>User-Friendly Interface</h3>
+                    </div>
+                    <div class="face back">
+                        <h3> Intuitive User Interface</h3>
+                        <p>Our website offers a seamless and intuitive user interface, ensuring a smooth browsing
+                            experience
+                            for
+                            all users.</p>
+                    </div>
+                </div>
+                <div class="card" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                    <div class="face front">
+                        <img src="./images/Cross-Platform Compatibility 1.jpg" alt="feature1">
+                        <h3>Diverse Applications</h3>
+                    </div>
+                    <div class="face back">
+                        <h3>Wide Range of Applications</h3>
+                        <p> Our project finds applications in various domains, including education, corporate
+                            environments,
+                            healthcare settings, and more, making a positive impact in different aspects of life.</p>
+                    </div>
+                </div>
+                <div class="card" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                    <div class="face front">
+                        <img src="./images/Community and Support.jpg" alt="feature1">
+                        <h3>Community and Support</h3>
+                    </div>
+                    <div class="face back">
+                        <h3>Supportive Community and Resources</h3>
+                        <p>We foster a community of users, experts, and supporters who are dedicated to promoting
+                            inclusivity
+                            and providing support. Access valuable resources and engage with like-minded individuals.
+                        </p>
+                    </div>
+                </div>
+                <div class="card" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                    <div class="face front">
+                        <img src="./images/Collaboration and Sharing.jpg" alt="feature1">
+                        <h3>Collaboration and Sharing</h3>
+                    </div>
+                    <div class="face back">
+                        <h3> Connect, collaborate, and share sign language resources.</h3>
+                        <p>Join our supportive community to collaborate on sign language projects, share resources, and
+                            empower the sign language community. Certified users can contribute valuable datasets,
+                            enhancing the accuracy of our algorithms. Together, let's make a difference.</p>
+                    </div>
+                </div>
+                <div class="card" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                    <div class="face front">
+                        <img src="./images/Cross-Platform Compatibility 2.jpg" alt="feature1">
+                        <h3>Cross-Platform Compatibility</h3>
+                    </div>
+                    <div class="face back">
+                        <h3>Seamless Multi-Device Experience</h3>
+                        <p>Whether you prefer to access our services on your mobile phone or laptop, our project offers
+                            a
+                            responsive and user-friendly experience on various platforms. Switch between devices
+                            effortlessly
+                            while enjoying the same functionalities and benefits.</p>
+                    </div>
+                </div>
+                <div class="card" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                    <div class="face front">
+                        <img src="./images/Eduaction.jpg" alt="feature1">
+                        <h3>Education and Learning Tools</h3>
+                    </div>
+                    <div class="face back">
+                        <h3>Access sign language educational resources for enhanced learning.</h3>
+                        <p>Our Webapplication provides a range of educational materials, tutorials, and learning tools
+                            to support sign language learning and promote inclusivity in educational settings. make this
+                            like before.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card-two">
+            <a href="#swiperid" class="downBtn"><button class="down-arrow"><img src="./icons/icons8-double-down-50.png"
+                        alt="Down-arrow"></button></a>
+        </div>
+    </card>
+    <swiper class="swiper-section" id="swiperid">
+        <div class="swiper-one">
+            <h1 data-aos="fade-up" data-aos-duration="1000"><span>E</span>xperience the Sign<span>Comm</span> App in
+                Action</h1>
+            <p data-aos="fade-up" data-aos-duration="1000">A compelling showcase will give you a sneak glimpse into the
+                cutting-edge SignComm mobile app's world while increasing communication for the deaf population.</p>
+            <swiper-container class="mySwiper-two" space-between="30" pagination="true" pagination-clickable="true"
+                effect="fade" loop="true" mousewheel="true">
+                <swiper-slide><img src="./images/Slider-1.png" class="mySwiperImg-two" alt="Slider-1"></swiper-slide>
+                <swiper-slide><img src="./images/Slider-2.png" class="mySwiperImg-two" alt="Slider-2"></swiper-slide>
+                <swiper-slide><img src="./images/Slider-3.png" class="mySwiperImg-two" alt="Slider-3"></swiper-slide>
+                <swiper-slide><img src="./images/Slider-4.png" class="mySwiperImg-two" alt="Slider-4"></swiper-slide>
+                <swiper-slide><img src="./images/Slider-5.png" class="mySwiperImg-two" alt="Slider-5"></swiper-slide>
+            </swiper-container>
+        </div>
+        <div class="swiper-two">
+            <a href="#mobileId" class="downBtn"><button class="down-arrow"><img src="./icons/icons8-double-down-50.png"
+                        alt="Down-arrow"></button></a>
+        </div>
+    </swiper>
+    <mobile class="mobile-section" id="mobileId">
+        <div class="mobile-center">
+            <div class="mobile-one">
+                <h1>Available Now On Each Platform!</h1>
+                <div class="mobile-buttons">
+                    <a href="#"><img src="./icons/AppStore.png" alt=""></a>
+                    <a href="#"><img src="./icons/PlayStore.png" alt=""></a>
+                </div>
+            </div>
+            <div class="mobile-two">
+                <img src="./images/Mobile-image.png" alt="Mobile-image">
+            </div>
+        </div>
+    </mobile>
+    <footer>
+        <div class="footer-one">
+            <div class="footer-left">
+                <div class="logo" id="footer-logo"><a href="#">Sign<span>Comm</span></a></div>
+            </div>
+            <div class="fotter-line"></div>
+            <div class="footer-right">
+                <form action="#" id="submitForm">
+                    <h2>Let's Stay Connected!!</h2>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                        <input type="email" required id="email">
+                        <label>Email</label>
+                    </div>
+                    <div class="login-status"></div>
+                    <h3>Privacy Policy</h3>
+                    <label class="checked-label"><input type="checkbox">I have read the Privacy Policy and I give my
+                        consent to the processing of my personal data.</label>
+                    <button type="submit" class="btn" id="signinBtn">Submit</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-two">
+            <h2>Follow us</h2>
+            <ul>
+                <li><a href=""><i class="fa-brands fa-google-plus-g"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-three">
+            <ul>
+                <li><a href="">Website Terms</a></li>
+                <li><a href="">Privacy Policy</a></li>
+                <li><a href="">Cookie Policy</a></li>
+                <li><a href="">Credits</a></li>
+            </ul>
+            <p>Copyright © 2023 SignComm. All rights reserved. This website and its content are protected by
+                international copyright laws. No part of this website may be reproduced, distributed, or transmitted in
+                any form or by any means without the prior written permission of SignComm</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+    <script src="./scripts/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

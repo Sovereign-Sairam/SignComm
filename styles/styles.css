@@ -1,0 +1,904 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,500;1,700;1,900&display=swap');
+
+@font-face {
+    font-family: 'proxima_nova_rgregular';
+    src: url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.eot');
+    src: url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.eot?#iefix') format('embedded-opentype'),
+        url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.woff') format('woff'),
+        url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.ttf') format('truetype'),
+        url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.svg#proxima_nova_rgregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'proxima_nova_rgbold';
+    src: url('https://litmus.com/fonts/Emails/proximanova-bold-webfont.eot');
+    src: url('https://litmus.com/fonts/Emails/proximanova-bold-webfont.eot?#iefix') format('embedded-opentype'),
+        url('https://litmus.com/fonts/Emails/proximanova-bold-webfont.woff') format('woff'),
+        url('https://litmus.com/fonts/Emails/proximanova-bold-webfont.ttf') format('truetype'),
+        url('https://litmus.com/fonts/Emails/proximanova-bold-webfont.svg#proxima_nova_rgbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'optimaroman';
+    src: url('https://media.wheaton.com/fonts/optima-webfont.eot');
+    src: url('https://media.wheaton.com/fonts/optima-webfont.eot?#iefix') format('embedded-opentype'), url('https://media.wheaton.com/fonts/optima-webfont.woff2') format('woff2'), url('https://media.wheaton.com/fonts/optima-webfont.woff') format('woff'), url('https://media.wheaton.com/fonts/optima-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: #15C39A;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background:beige;
+    border-radius: 5px;
+  }
+
+
+* {
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'optimaroman', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+}
+
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 8%;
+    background:  linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(../images/modestas-urbonas-vj_9l20fzj0-unsplash.jpg);
+    background-position: center;
+    background-size:cover;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+.hero-one {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.hero-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.hero-details {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 100%;
+}
+
+.hero-details h1 {
+    font-size: 55px;
+    color: white;
+}
+
+.heroPara {
+    font-size: 20px;
+    width: 70%;
+    line-height: 30px;
+    letter-spacing: 1px;
+    color: white;
+}
+
+.hero-details span {
+    color: #15C39A;
+}
+
+.hero-btn {
+    display: flex;
+    gap: 20px;
+}
+
+.hero-btn a {
+    list-style: none;
+}
+.try-btn{
+    text-decoration: none;
+}
+.hero-details .btn {
+    background-color: #15C39A;
+    color: black;
+    font-weight: 800;
+}
+
+.hero-details .btn:hover {
+    color: white;
+}
+
+.mySwiper-one {
+    width: 300px;
+    height: 100%;
+    background-color: transparent;
+}
+
+.mySwiperImg {
+    width: 300px;
+    height: 100%;
+}
+
+.mySwiper-one swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+    width: 250px;
+    height: 100%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+.hero-two,
+.do-two {
+    padding-top: 5%;
+    background-color: transparent;
+}
+
+
+/* -------------------------------------------------------------------------------- */
+
+.do-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    padding: 8%;
+    background: linear-gradient(to left, #E6E6E6, #FFFFFF);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+.do-one {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.do-top {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.do-top h1 {
+    font-size: 55px;
+    color: #1B252F;
+}
+
+.do-top p {
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 1px;
+}
+
+.do-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    gap: 30px;
+}
+
+.do-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 400px;
+    gap: 10px;
+    text-align: center;
+}
+
+#do-details-two {
+    padding-top: 6%;
+}
+
+.do-details img {
+    width: 300px;
+    height: 250px;
+    border-radius: 20px;
+}
+
+.do-details h3 {
+    font-size: 28px;
+    color: #1B252F;
+}
+
+.do-details p {
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 1px;
+    width: 80%;
+}
+
+/* ------------------------------------------------------------------------------------------- */
+
+.card-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 8%;
+    background: linear-gradient(to right, #E6E6E6, #FFFFFF);
+    height: 100%;
+    width: 100%;
+    gap: 30px;
+}
+
+.card-one {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+.card-right {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 50px;
+    height: 100%;
+}
+
+.card-details {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card-details h1 {
+    font-size: 55px;
+    color: #1B252F;
+}
+
+.card-details p {
+    font-size: 20px;
+    width: 80%;
+    line-height: 30px;
+    letter-spacing: 1px;
+}
+
+.card {
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    text-align: center;
+    width: 250px;
+    height: 43vh;
+    position: relative;
+}
+
+.card img {
+    width: 250px;
+    height: 43vh;
+    border-radius: 5px;
+}
+
+.card .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.card .front {
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px black;
+}
+
+.card .front h3 {
+    position: absolute;
+    border: 0;
+    top: 80%;
+    width: 100%;
+    /* height: 100%; */
+    padding: 10px 0;
+    list-style: 45px;
+    background: rgba(0, 0, 0, 0.217);
+    color: #1B252F;
+}
+
+.card .back {
+    transform: perspective(600px) rotateY(180deg);
+    background: rgba(3, 35, 34);
+    padding: 15px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    box-shadow: 0 5px 10px black;
+}
+
+.card .back h3 {
+    font-size: 19px;
+    margin-top: 10px;
+    letter-spacing: 2px;
+}
+
+.card .back p {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 1px;
+}
+
+.card:hover .front {
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.card:hover .back {
+    transform: perspective(600px) rotateY(360deg);
+}
+
+
+/* ---------------------------------------------------------------------- */
+.swiper-section {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    padding: 8%;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    background: linear-gradient(to left, #E6E6E6, #FFFFFF);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+.swiper-one {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 30px;
+}
+
+.swiper-one h1 {
+    font-size: 55px;
+    color: #1B252F;
+}
+
+.swiper-one p {
+    font-size: 25px;
+    width: 70%;
+    line-height: 30px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.down-arrow {
+    background-color: transparent;
+}
+
+.mySwiper {
+    width: 1000px;
+    height: 100vh;
+}
+
+.mySwiper-two {
+    width: 1000px;
+    height: 70vh;
+    border-radius: 20px;
+}
+
+.mySwiper-two swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+    object-position: center;
+}
+
+.mySwiperImg-two {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* -------------------------------------------------------------------------------*/
+
+
+
+.mobile-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8%;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to right, #E6E6E6, #FFFFFF);
+}
+
+.mobile-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #24282c;
+    border-radius: 40px;
+    padding: 6%;
+    padding-bottom: 0;
+}
+
+.mobile-one {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mobile-one h1 {
+    font-size: 50px;
+    color: white;
+    width: 78%;
+}
+
+.mobile-buttons {
+    display: flex;
+    gap: 30px;
+}
+
+.mobile-buttons a {
+    width: 200px;
+    height: 190px;
+}
+
+.mobile-buttons img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: contain;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+.mobile-two img {
+    width: 300px;
+}
+
+
+.login-status {
+    padding: 10px 0;
+}
+
+.login-status {
+    color: #ebebee;
+    display: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.login-success {
+    display: block;
+    color: rgb(0, 164, 3);
+}
+
+.login-failed {
+    display: block;
+    color: rgb(240, 29, 29);
+}
+
+
+/* --------------------------------------------------contribution---------------------------------------- */
+.Contribution{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10%;
+    width: 100%;
+}
+.wrapper-Contribution {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    /* display: none; */
+    background-color: #1B252F;
+    transition: 1s;
+    margin-top: 2%;
+    width: 90%;
+}
+#login-form{
+    align-items: center;
+}
+.name-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.form-box {
+    width: 100%;
+    padding: 40px;
+}
+
+.form-box h2 {
+    font-size: 2.1rem;
+    color: white;
+    text-align: center;
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-bottom: 2px solid #E6E6E6;
+    margin: 30px 0;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+#login-register {
+    display: flex;
+    gap: 5px;
+}
+
+#login-register .input-box {
+    margin: 0;
+    margin-top: 25px;
+}
+
+.input-box label {
+    position: absolute;
+    color: #15C39A;
+    font-weight: 500;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.input-box input {
+    background: transparent;
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 5vh;
+    color: white;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label {
+    top: -15px;
+}
+
+.input-box .icon {
+    position: absolute;
+    right: 8px;
+    font-size: 1.2rem;
+    color: white;
+    line-height: 57px;
+}
+
+.remember-forgot {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.remember-forgot a {
+    color: #15C39A;
+    text-decoration: none;
+}
+
+.submit-btn {
+    background-color: #15C39A;
+    padding: 10px 20px;
+    font-size: 1rem;
+    width: 100%;
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 15%;
+}
+
+
+.decoration {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.decoration-line {
+    width: 150px;
+    height: 1px;
+    background-color: white;
+}
+
+
+
+.register-login {
+    color: white;
+    display: flex;
+    margin-top: 15px;
+    justify-content: center;
+}
+
+.register-login a {
+    color: #15C39A;
+    text-decoration: none;
+    padding-left: 10px;
+}
+.toggle{
+    display: block;
+}
+
+
+
+@media (max-width:1280px) {
+    header {
+        padding: 14px 2%;
+        transition: .2s;
+    }
+
+    .navbar a {
+        padding: 5px 0;
+        margin: 0px 20px;
+    }
+
+    .do-bottom {
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    #do-details-two {
+        padding-bottom: 0;
+    }
+
+}
+
+@media (max-width:1180px) {
+    .hero-section {
+        height: 100%;
+    }
+
+    .hero-one {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .hero-details {
+        align-items: center;
+    }
+    .mySwiper-two {
+        width: 900px;
+        height: 500px;
+    }
+    .card {
+        width: 250px;
+        height: 35vh;
+    }
+    
+    .card img {
+        width: 250px;
+        height: 35vh;
+    }
+}
+
+@media (max-width: 980px) {
+    .hero-one {
+        flex-direction: column;
+    }
+
+    .hero-details {
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero-details p {
+        text-align: center;
+    }
+
+
+    .card-one {
+        flex-direction: column;
+        justify-content: start;
+        gap: 60px;
+        align-items: center;
+    }
+
+    .card-details {
+        text-align: center;
+        align-items: center;
+    }
+    .mySwiper-two {
+        width: 700px;
+        height: 430px;
+    }
+    .mobile-center {
+        width: 700px;
+    }
+
+    .mobile-one h1 {
+        font-size: 40px;
+        color: white;
+        width: 75%;
+    }
+
+    .mobile-buttons {
+        gap: 20px;
+    }
+
+    .mobile-buttons a {
+        width: 190px;
+        height: 180px;
+    }
+
+    .mobile-two img {
+        width: 180px;
+    }
+}
+
+
+@media (max-width:750px) {
+
+    .card-right {
+        grid: none;
+    }
+
+    .mySwiper-two {
+        width: 450px;
+        height: 280px;
+    }
+
+    .mobile-center {
+        flex-direction: column;
+        text-align: center;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .mobile-one {
+        align-items: center;
+
+    }
+
+    .mobile-one h1 {
+        font-size: 40px;
+        color: white;
+    }
+
+    .mobile-buttons {
+        justify-content: none;
+        align-items: center;
+    }
+
+    .mobile-buttons a {
+        width: 190px;
+        height: 180px;
+    }
+
+    .mobile-two img {
+        width: 250px;
+    }
+
+}
+
+@media (max-width:470px) {
+
+    .card-right {
+        grid: none;
+    }
+
+    .hero-section {
+        height: 100%;
+    }
+
+    .mySwiper-two {
+        width: 380px;
+        height: 220px;
+    }
+
+    .do-details {
+        width: 300px;
+    }
+
+    #do-details-two {
+        padding-top: 0;
+    }
+
+    .do-details img {
+        width: 280px;
+    }
+
+    .mobile-buttons {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .mobile-buttons a {
+        width: 200px;
+        height: 100px;
+    }
+
+    .mobile-buttons img {
+        height: 100px;
+    }
+}
+
+@media (max-width:480px) {
+
+    .wrapper-login,
+    .wrapper-Register {
+        width: 90%;
+        margin-top: 15%;
+    }
+
+    .btn {
+        width: 58vw;
+    }
+
+    .decoration-line {
+        width: 28vw;
+    }
+
+    .sign-ins {
+        flex-direction: column;
+    }
+}
+
+@media (max-width:420px) {
+    .decoration-line {
+        width: 26vw;
+    }
+}
+
+@media (max-width:370px) {
+    .decoration-line {
+        width: 24vw;
+    }
+
+    #login-register {
+        flex-direction: column;
+    }
+}

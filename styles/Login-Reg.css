@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url(../images/5039684.jpg) no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+}
+
+.color {
+    background-color: #DB4437;
+}
+
+.wrapper-login,
+.wrapper-Register {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    /* display: none; */
+    transition: 1s;
+    margin-top: 2%;
+}
+#login-form{
+    align-items: center;
+}
+.name-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.form-box {
+    width: 100%;
+    padding: 40px;
+}
+
+.form-box h2 {
+    font-size: 2.1rem;
+    color: white;
+    text-align: center;
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-bottom: 2px solid #162938;
+    margin: 30px 0;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+#login-register {
+    display: flex;
+    gap: 5px;
+}
+
+#login-register .input-box {
+    margin: 0;
+    margin-top: 25px;
+}
+
+.input-box label {
+    position: absolute;
+    color: #15C39A;
+    font-weight: 500;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.input-box input {
+    background: transparent;
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 5vh;
+    color: white;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label {
+    top: -15px;
+}
+
+.input-box .icon {
+    position: absolute;
+    right: 8px;
+    font-size: 1.2rem;
+    color: white;
+    line-height: 57px;
+}
+
+.remember-forgot {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.remember-forgot a {
+    color: #15C39A;
+    text-decoration: none;
+}
+
+.btn {
+    background-color: #15C39A;
+    padding: 10px 20px;
+    font-size: 1rem;
+    width: 100%;
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.sign-in-with {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    gap: 10px;
+}
+
+.decoration {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.decoration-line {
+    width: 150px;
+    height: 1px;
+    background-color: white;
+    /* border-bottom: 2px solid white; */
+}
+
+.sign-ins {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.facebook-btn {
+    padding: 10px;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    color: white;
+    gap: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #0165E1;
+}
+
+.google-btn {
+    padding: 10px;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    color: white;
+    gap: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #DB4437;
+}
+
+.register-login {
+    color: white;
+    display: flex;
+    margin-top: 15px;
+    justify-content: center;
+}
+
+.register-login a {
+    color: #15C39A;
+    text-decoration: none;
+    padding-left: 10px;
+}
+
+.login-status {
+    padding: 10px 0;
+}
+
+.login-status {
+    color: #ebebee;
+    display: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.login-success {
+    display: block;
+    color: rgb(0, 164, 3);
+}
+
+.login-failed {
+    display: block;
+    color: rgb(240, 29, 29);
+}
+
+@media (max-width:480px) {
+
+    .wrapper-login,
+    .wrapper-Register {
+        width: 90%;
+        margin-top: 15%;
+    }
+
+    .btn {
+        width: 58vw;
+    }
+
+    .decoration-line {
+        width: 28vw;
+    }
+
+    .sign-ins {
+        flex-direction: column;
+    }
+}
+
+@media (max-width:420px) {
+    .decoration-line {
+        width: 26vw;
+    }
+}
+
+@media (max-width:370px) {
+    .decoration-line {
+        width: 24vw;
+    }
+
+    #login-register {
+        flex-direction: column;
+    }
+}

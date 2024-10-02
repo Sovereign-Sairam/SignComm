@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignComm</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/navbar.css">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="icon" type="images/x-icon" href="./icons/Logo.png" />
+</head>
+
+<body>
+    <header>
+        <div class="logo"><a href="../index.html">Sign<span>Comm</span></a></div>
+        <div class="navbar">
+            <ul class="links">
+                <li><a href="#" class="nav-btn">Home</a></li>
+                <li><a href="#" class="nav-btn">About</a></li>
+                <li><a href="#" class="nav-btn">Services</a></li>
+                <li><a href="#" class="nav-btn">Contact</a></li>
+                <li><a href="./components/contribute.html" class="nav-btn">Contribution</a></li>
+            </ul>
+            <div class="profile">
+                <img src="https://srcwap.com/wp-content/uploads/2022/08/abstract-user-flat-4.png" width="50" height="50">
+            </div>
+        </div>
+        <div class="toggle_btn">
+            <i id="barIcon" class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+    <div class="Contribution">
+      <h1>contribute DataSet for our Project!!</h1>
+      <div class="wrapper-Contribution" id="Contribution-page">
+        <div class="form-box login">
+          <form method="post" action="https://script.google.com/macros/s/AKfycbwnaPWlaF0IeyuXARNdJTVdLYeHcUe9gnqEAbp9o3HXmiiw184C60MasElCX7GM9zYG/exec" id="Registerform">
+            <div class="input-box">
+              <input type="text" name="Name" required id="username">
+              <label>Name</label>
+            </div>
+            <div class="input-box">
+              <input type="email" name="Email" required id="mail">
+              <label>Email</label>
+            </div>
+            <div class="input-box">
+              <input type="text" name="ContactNo." required>
+              <label>Contact No.</label>
+            </div>
+            <div class="input-box">
+              <input type="text" name="LevelOfUnderstanding"  required >
+              <label>Level Of Understanding</label>
+            </div>
+            <div class="input-box">
+              <input type="text" name="ProofOfSignLanguageProficiency" required>
+              <label>Proof Of Sign Language Proficiency</label>
+            </div>
+            <div class="input-box">
+              <input type="text" name="YearsOfExperience" required>
+              <label>Years Of Experience</label>
+            </div>
+            <button type="submit" class="submit-btn" >Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <footer>
+        <div class="footer-one">
+            <div class="footer-left">
+                <div class="logo" id="footer-logo"><a href="#">Sign<span>Comm</span></a></div>
+            </div>
+            <div class="fotter-line"></div>
+            <div class="footer-right">
+                <form action="#" id="submitForm">
+                    <h2>Let's Stay Connected!!</h2>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                        <input type="email" required id="email">
+                        <label>Email</label>
+                    </div>
+                    <div class="login-status"></div>
+                    <h3>Privacy Policy</h3>
+                    <label class="checked-label"><input type="checkbox">I have read the Privacy Policy and I give my
+                        consent to the processing of my personal data.</label>
+                    <button type="submit" class="btn" id="signinBtn">Submit</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-two">
+            <h2>Follow us</h2>
+            <ul>
+                <li><a href=""><i class="fa-brands fa-google-plus-g"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-three">
+            <ul>
+                <li><a href="">Website Terms</a></li>
+                <li><a href="">Privacy Policy</a></li>
+                <li><a href="">Cookie Policy</a></li>
+                <li><a href="">Credits</a></li>
+            </ul>
+            <p>Copyright © 2023 SignComm. All rights reserved. This website and its content are protected by
+                international copyright laws. No part of this website may be reproduced, distributed, or transmitted in
+                any form or by any means without the prior written permission of SignComm</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+    <script src="./script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

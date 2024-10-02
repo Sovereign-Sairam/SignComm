@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="../styles/Login-Reg.css">
+    <link rel="stylesheet" href="../styles/navbar.css">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="icon" type="images/x-icon" href="./icons/Logo.png" />
+</head>
+<body>
+  <header>
+    <div class="logo"><a href="../index.html">Sign<span>Comm</span></a></div>
+    <div class="navbar">
+        <ul class="links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="./components/contribute.html" class="nav-btn">Contribution</a></li>
+        </ul>
+        <div class="buttons">
+            <a href="../components/Login.html"> <button class="btn"> <i class="fa-solid fa-user"></i>Login</button>
+            </a>
+            <a href="../components/Register.html"> <button class="btn"><i class="fa-solid fa-user-plus"></i>Register</button>
+            </a>
+        </div>
+    </div>
+    <div class="toggle_btn">
+        <i id="barIcon" class="fa-solid fa-bars"></i>
+    </div>
+</header>
+<div class="wrapper-Register" id="register-page">
+  <div class="form-box login">
+    <h2>Register</h2>
+    <form action="#" id="Registerform">
+      <div class="input-box">
+        <span class="icon"><ion-icon name="person"></ion-icon></span>
+        <input type="text" required id="username">
+        <label>Username</label>
+      </div>
+      <div class="input-box">
+        <span class="icon"><ion-icon name="mail"></ion-icon></span>
+        <input type="email" required id="mail">
+        <label>Email</label>
+      </div>
+      <div class="input-box">
+        <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+        <input type="password" required id="password">
+        <label>Password</label>
+      </div>
+      <div class="input-box">
+        <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+        <input type="password" required id="confirmPassword">
+        <label>Confirm Password</label>
+      </div>
+      <div class="login-status">
+          
+      </div>
+      <div class="sign-in-with">
+        <button type="submit" class="btn" id="RegisterBtn">Register</button>
+        <div class="decoration">
+          <div class="decoration-line"></div> OR<div class="decoration-line"></div>
+        </div>
+        <div class="sign-ins">
+          <button class="facebook-btn" id="signInWithFacebook"> <img src="../icons/icons8-facebook-20.png" alt="Facebook">Sign in with Facebook</button>
+          <button class="google-btn" id="signInWithGoogle"> <img src="../icons/icons8-google-20.png" alt="Google">Sign in with Google</button>
+        </div>
+      </div>
+      <div class="register-login">
+        <p>Already have an account?<a href="./Login.html" id="signin-link">Sign In</a></p>
+      </div>
+    </form>
+  </div>
+</div>
+
+<script src="../scripts/script.js" ></script>
+<script src="../scripts/Register.js" type="module"></script>
+</body>
+
+</html>
